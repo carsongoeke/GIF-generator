@@ -79,7 +79,7 @@ for(i in 1:length(gif)) {
   if (i == 1) {
     frame <- array(0, dim = c(120,200,1))
     frame[1:120, 1:200,1] <- gif.array[1,1:120,1:200,]
-    image_frame <- image_read(gif.array[1,1:120,1:200,])
+    image_frame <- image_read(frame)
     new.gif <- image_convert(image_frame, 'gif')
   }
   else {
